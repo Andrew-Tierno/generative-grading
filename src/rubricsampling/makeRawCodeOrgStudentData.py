@@ -6,13 +6,13 @@ import getpass
 import numpy as np
 
 USER = getpass.getuser()
-DATA_ROOT = '/mnt/fs5/{}/generative-grading/data/real/education/'.format(USER)
+DATA_ROOT = '/home/nap/cs398-NAP/generative-grading/data/real/education/'
 ZIPF_CLASS = {'head': 0, 'body': 1, 'tail': 2}
 
 
 def load_data(problem_name):
     problem_id = int(problem_name.split('_')[0].replace('codeorg', ''))
-    root = '/mnt/fs5/{}/datasets/code_org_public_dataset_v1/data/p{}'.format(USER, problem_id)
+    root = '/home/nap/cs398-NAP/generative-grading/datasets/code_org_public_dataset_v1/data/p{}'.format(problem_id)
     programs_file = os.path.join(root, 'programs-{}.pickle'.format(problem_id))
     counts_file = os.path.join(root, 'countMap-{}.pickle'.format(problem_id))
     annotations_file = os.path.join(root, 'annotations-{}.pickle'.format(problem_id))
