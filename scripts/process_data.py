@@ -249,8 +249,10 @@ def load_vocabs(vocab_paths):
 def make_rnn_data(problem, split, domain='education', sampling_strategy='standard'):
     rnn_paths = paths.rnn_data_paths(problem, split, domain, sampling_strategy)
     vocab_paths = paths.vocab_paths(problem, domain)
-    os.makedirs(rnn_paths['data_path'], exist_ok=True)
+    print(rnn_paths)
 
+    os.makedirs(rnn_paths['data_path'], exist_ok=True)
+    print( paths.raw_data_paths(problem, split, domain, sampling_strategy))
     (counts_paths, labels_paths, rv_order_paths, 
      tiers_paths, anon_mapping_paths, all_rvs_path) = \
          paths.raw_data_paths(problem, split, domain, sampling_strategy)
