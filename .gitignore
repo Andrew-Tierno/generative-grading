@@ -105,7 +105,6 @@ ENV/
 
 # custom
 **.DS_Store
-data/
 cache/
 experiments/
 
