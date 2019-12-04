@@ -5,10 +5,10 @@ from glob import glob
 
 from globals import BASE_PATH
 
+
 DATA_PATH = os.path.join(BASE_PATH, 'data')
 # USER = getpass.getuser()
 # DATA_PATH = '/mnt/fs5/{}/generative-grading/data'.format(USER)
-
 RAW_DATA_PATH = os.path.join(DATA_PATH, 'raw')
 STUDENT_DATA_PATH = os.path.join(DATA_PATH, 'real', 'education')
 PROCESSED_DATA_PATH = os.path.join(DATA_PATH, 'processed')
