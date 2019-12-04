@@ -181,6 +181,7 @@ class Engine:
         nonterminals = {}
         reusableNonterminals = set()
         file_paths = glob.glob(os.path.join(grammar_dir, "*.py"))
+        print(file_paths)
         files = [ f[:-3].replace(os.path.sep, '.') for f in file_paths if isfile(f) and not f.endswith('__init__.py')]
         for f in files:
             module = __import__(f, fromlist=['object'])

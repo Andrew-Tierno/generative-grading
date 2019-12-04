@@ -32,6 +32,7 @@ class RubricSampler(object):
 
     def run(self, n, out_dir, grammar_dir, sample_strategy):
         if sample_strategy == SAMPLE_STANDARD:
+            print(grammar_dir)
             self._run_standard(n, out_dir, grammar_dir)
         elif sample_strategy == SAMPLE_UNIFORM:
             self._run_uniform(n, out_dir, grammar_dir)

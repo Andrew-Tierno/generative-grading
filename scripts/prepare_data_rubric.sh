@@ -6,7 +6,7 @@ NUM_SAMPLES=1000;
 
 PROBLEM=cereal;
 PROBLEM_DIRNAME=${PROBLEM}_$((NUM_SAMPLES / 1000))k;
-BASE_DIR=/mnt/fs5/$USER/generative-grading/data
+# BASE_DIR=/mnt/fs5/$USER/generative-grading/data
 BASE_DIR=/Users/nataliecygan/Desktop/Stanford/cs398-NAP/generative-grading/data
 
 

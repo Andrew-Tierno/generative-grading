@@ -1,3 +1,6 @@
+import sys
+sys.path.insert(0, '../..')
+
 from base import Decision
 
 # "Start" is a special decision which is invoked by the Sampler
@@ -5,6 +8,10 @@ from base import Decision
 class Program(Decision):
 
     def registerChoices(self):
+
+        self.addChoice(self.ROOT_RV_NAME, {
+			self.ROOT_RV_VAL: 1
+		})
 
         self.addChoice('fruit', {
             'Fruit Loops':10,
