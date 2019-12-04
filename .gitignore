@@ -110,3 +110,6 @@ experiments/
 
 .vscode/
 .word_vectors_cache
+
+# swp files
+*.swp

@@ -5,24 +5,32 @@ from glob import glob
 
 from globals import BASE_PATH
 
-# DATA_PATH = os.path.join(BASE_PATH, 'data')
-USER = getpass.getuser()
-DATA_PATH = '/home/nap/cs398-NAP/generative-grading/data'
+
+DATA_PATH = os.path.join(BASE_PATH, 'data')
+# USER = getpass.getuser()
+# DATA_PATH = '/mnt/fs5/{}/generative-grading/data'.format(USER)
 RAW_DATA_PATH = os.path.join(DATA_PATH, 'raw')
 STUDENT_DATA_PATH = os.path.join(DATA_PATH, 'real', 'education')
 PROCESSED_DATA_PATH = os.path.join(DATA_PATH, 'processed')
 
-POS_DATA_PATH = '/home/nap/cs398-NAP/generative-grading/postagging/data'
+# POS_DATA_PATH = '/mnt/fs5/{}/generative-grading/postagging/data'.format(USER)
+POS_DATA_PATH = os.path.join(BASE_PATH, 'postagging/data')
+
+# POS_RAW_DATA_PATH = os.path.join(POS_DATA_PATH, 'raw')
 POS_RAW_DATA_PATH = os.path.join(POS_DATA_PATH, 'raw')
+POS_DATA_PATH = os.path.join(BASE_PATH, 'postagging/data')
 POS_PROCESSED_DATA_PATH = os.path.join(POS_DATA_PATH, 'processed')
 
-SCENE_GRAPH_DATA_PATH = '/home/nap/cs398-NAP/generative-grading/scenegraph/data'
+# SCENE_GRAPH_DATA_PATH = '/mnt/fs5/{}/generative-grading/scenegraph/data'.format(USER)
+SCENE_GRAPH_DATA_PATH = os.path.join(BASE_PATH, 'scenegraph/data')
+
 SCENE_GRAPH_RAW_DATA_PATH = os.path.join(SCENE_GRAPH_DATA_PATH, 'raw')
 SCENE_GRAPH_PROCESSED_DATA_PATH = os.path.join(SCENE_GRAPH_DATA_PATH, 'processed')
 
 
 PYRAMIDS_DATA_PATH = os.path.join(BASE_PATH, 'data', 'pyramidsnapshot')
-PYRAMIDS_GRAMMAR_DATA_PATH = '/home/nap/cs398-NAP/generative-grading/pyramidSnapshot_v2'
+# PYRAMIDS_GRAMMAR_DATA_PATH = '/mnt/fs5/{}/generative-grading/pyramidSnapshot_v2'.format(USER)
+POS_RAW_DATA_PATH = os.path.join(BASE_PATH, 'pyramidSnapshot_v2/data')
 
 GRAMMAR_MODULE = os.path.join('src', 'rubricsampling', 'grammars')
 

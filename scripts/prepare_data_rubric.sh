@@ -2,11 +2,12 @@
 
 # RUN ME FROM REPO ROOT...
 
-NUM_SAMPLES=100000;
+NUM_SAMPLES=1000;
 
-PROBLEM=citizenship13;
+PROBLEM=cereal;
 PROBLEM_DIRNAME=${PROBLEM}_$((NUM_SAMPLES / 1000))k;
 BASE_DIR=/mnt/fs5/$USER/generative-grading/data
+BASE_DIR=/Users/nataliecygan/Desktop/Stanford/cs398-NAP/generative-grading/data
 
 
 for STRATEGY in standard uniform tempered 
